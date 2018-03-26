@@ -13,6 +13,8 @@
 		378C3573206947F60036158A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378C3572206947F60036158A /* Assets.xcassets */; };
 		378C3576206947F60036158A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378C3574206947F60036158A /* LaunchScreen.storyboard */; };
 		378C357E206948320036158A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 378C357D206948320036158A /* GoogleService-Info.plist */; };
+		47CCD165206950C20079FCEF /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CCD164206950C20079FCEF /* login.storyboard */; };
+		47CCD167206951250079FCEF /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CCD166206951250079FCEF /* login.swift */; };
 		E6310B282A744575F3C2B62C /* Pods_Senior_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADEE3776141BA3A747749B8 /* Pods_Senior_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		378C3575206947F60036158A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		378C3577206947F60036158A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		378C357D206948320036158A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47CCD164206950C20079FCEF /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		47CCD166206951250079FCEF /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		9ADEE3776141BA3A747749B8 /* Pods_Senior_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Senior_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB571217F4F32E74D39E0D9C /* Pods-Senior Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senior Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Senior Project/Pods-Senior Project.debug.xcconfig"; sourceTree = "<group>"; };
 		EE5EEFF96C07B9106CE85DB2 /* Pods-Senior Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senior Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Senior Project/Pods-Senior Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				378C3574206947F60036158A /* LaunchScreen.storyboard */,
 				378C3577206947F60036158A /* Info.plist */,
 				378C357D206948320036158A /* GoogleService-Info.plist */,
+				47CCD166206951250079FCEF /* login.swift */,
+				47CCD164206950C20079FCEF /* login.storyboard */,
 			);
 			path = "Senior Project";
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 				378C3576206947F60036158A /* LaunchScreen.storyboard in Resources */,
 				378C357E206948320036158A /* GoogleService-Info.plist in Resources */,
 				378C3573206947F60036158A /* Assets.xcassets in Resources */,
+				47CCD165206950C20079FCEF /* login.storyboard in Resources */,
 				378C3571206947F60036158A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,12 +177,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Senior Project/Pods-Senior Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				378C356E206947F60036158A /* ViewController.swift in Sources */,
+				47CCD167206951250079FCEF /* login.swift in Sources */,
 				378C356C206947F60036158A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
