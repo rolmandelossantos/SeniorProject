@@ -7,9 +7,7 @@ target 'Senior Project' do
 
   # Pods for Senior Project
 pod 'Firebase/Core'
-pod 'Firebase/Database'
-pod 'Firebase/Auth'
-pod 'KeychainSwift'
+
 
 
 end
