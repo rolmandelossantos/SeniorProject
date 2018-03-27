@@ -87,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gcs-Tv-iar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2607" y="1769"/>
+            <point key="canvasLocation" x="2944.8000000000002" y="1768.9655172413795"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="uyr-b4-J19">
@@ -105,6 +105,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Z3-UJ-VuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="279" y="977"/>
+        </scene>
+        <!--Services-->
+        <scene sceneID="4m7-i7-ghC">
+            <objects>
+                <tableViewController id="ek4-1k-f7K" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KAV-S9-a6B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WaE-Um-WAT">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WaE-Um-WAT" id="TI2-zN-1YA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ek4-1k-f7K" id="Gc3-2p-YRm"/>
+                            <outlet property="delegate" destination="ek4-1k-f7K" id="eGV-eT-QOs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Services" image="clipper" id="D1G-jS-2mX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8l-fO-Awd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="1020"/>
         </scene>
         <!--Messages-->
         <scene sceneID="R1C-4z-OMM">
@@ -135,6 +164,7 @@
                         <segue destination="jxC-KO-G0w" kind="relationship" relationship="viewControllers" id="QrA-27-JFz"/>
                         <segue destination="Mio-Dt-UEu" kind="relationship" relationship="viewControllers" id="BdF-he-aMF"/>
                         <segue destination="QfG-XX-9o7" kind="relationship" relationship="viewControllers" id="YEy-KQ-iNc"/>
+                        <segue destination="ek4-1k-f7K" kind="relationship" relationship="viewControllers" id="cuz-Tg-RIu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daz-7j-qzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,6 +174,7 @@
     </scenes>
     <resources>
         <image name="calendar" width="31" height="31"/>
+        <image name="clipper" width="31" height="31"/>
         <image name="gallery" width="31" height="31"/>
         <image name="message" width="31" height="31"/>
     </resources>
