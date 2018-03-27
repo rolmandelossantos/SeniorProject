@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseAuth
 
 class ImageViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -27,6 +30,16 @@ class ImageViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         return cell
         
+    }
+    
+    @IBAction func SignOut(_ sender: Any){
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+    }
+        dismiss(animated: true, completion: nil)
     }
     
 }
